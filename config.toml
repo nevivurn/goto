@@ -4,7 +4,7 @@ title = "goto now;"
 copyright = "Licensed under Creative Commons Attribution 4.0."
 
 pygmentsCodefences = true
-pygmentsStyle = "solarized-light"
+pygmentsStyle = "bw"
 pygmentsUseClasses = true
 
 disableKinds = ["taxonomy", "taxonomyTerm", "sitemap"]
