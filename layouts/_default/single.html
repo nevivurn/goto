@@ -5,7 +5,7 @@
 			{{- if ( .Date.Format "2006-01-02" | ne "0001-01-01" ) }}<small class="text-muted">{{ .Date.Format "2006-01-02" }}</small>{{ end }}
 		</header>
 
-<main>
+<main class="text-wrap">
 {{ trim .Content "\n" | safeHTML }}
 </main>
 	</article>

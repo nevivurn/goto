@@ -7,12 +7,3 @@ body {
 code, pre {
 	font-family: "Roboto Mono" !important
 }
-.post-list {
-	font-size: 0.9;
-}
-.post-link {
-	color: black;
-}
-.post-link:hover {
-	color: black;
-}
