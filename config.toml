@@ -2,7 +2,6 @@ baseURL = "https://www.nevivur.net/"
 languageCode = "en-us"
 title = "goto now;"
 copyright = "Licensed under CC-BY-4.0"
-theme = "nevi"
 
 pygmentsCodefences = true
 pygmentsStyle = "solarized-light"

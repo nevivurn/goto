@@ -1,13 +1,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>{{ with .Title }}{{ . }} - {{ end }}{{ .Site.Title }}</title>
-	{{- range .AlternativeOutputFormats }}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{- end }}
+	<link rel="alternate" type="application/rss+xml" href="{{ "posts/index.xml" | absURL }}">
 	<!-- Fonts -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%7CRoboto+Mono" crossorigin="anonymous">
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ "css/stylesheet.css" | absURL }}">
-{{ partial "custom-css.html" }}
+	<link rel="stylesheet" href="{{ "css/highlight-solarized-light.css" | absURL}}">

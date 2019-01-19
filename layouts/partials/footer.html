@@ -5,7 +5,11 @@
 			<div class="col-sm-8">
 				<small>{{ with .Site.Author.name }}&copy; {{ . }}{{ end }} {{ with .Site.Copyright }}{{ . }}{{ end }}</small>
 			</div>
-			<div class="d-none d-sm-block col-sm-2"><a href="{{ "posts/index.xml" | absURL }}"><i class="fas fa-rss"></i></a></div>
+			<div class="d-none d-sm-block col-sm-2">
+				<a href="{{ "posts/index.xml" | absURL }}">
+					<span class="oi oi-rss"></span>
+				</a>
+			</div>
 		</div>
 	</footer>
 	
@@ -13,4 +17,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
-{{ partial "custom-js" . }}
+	<!-- MathJax -->
+	<script src="{{ "js/mathjax.js" | absURL }}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML.js" integrity="sha384-Ra6zh6uYMmH5ydwCqqMoykyf1T/+ZcnOQfFPhDrp2kI4OIxadnhsvvA2vv9A7xYv" crossorigin="anonymous"></script>
