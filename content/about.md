@@ -14,6 +14,6 @@ I am Yongun Seong (nevivurn).
 	- OFTC
 	- UriIRC
 - Do *not* contact me over discord. I will not respond.
-- GPG: `FF41471ECA1835A30A0A96898E6FE1696722CF28`
+- GPG: `FF41 471E CA18 35A3 0A0A  9689 8E6F E169 6722 CF28`
 
 <!-- send help -->
