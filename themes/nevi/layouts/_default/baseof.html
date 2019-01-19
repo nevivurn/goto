@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <head>
-	{{- partial "head.html" . -}}
+{{ partial "head.html" . | chomp }}
 </head>
 
 <body>
-	{{- partial "header.html" . -}}
-	{{ block "main" . }}{{ end }}
-	{{- partial "footer.html" . -}}
+{{ partial "header.html" . | chomp }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . | chomp }}
 </body>

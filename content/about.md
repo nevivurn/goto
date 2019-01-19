@@ -1,6 +1,8 @@
----
-title: "About Me"
----
++++
+title = "About"
+[menu.main]
+weight = 1
++++
 
 I am Yongun Seong (nevivurn).
 
