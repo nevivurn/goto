@@ -1,0 +1,9 @@
+{{ define "main" }}
+	<article class="container-fluid">
+		<header class="mb-2">
+			<h2 class="mb-0">{{ .Title }}</h2>
+			{{- if ( .Date.Format "2006-01-02" | ne "0001-01-01" ) }}<small class="text-muted">{{ .Date.Format "2006-01-02" }}</small>{{ end }}
+		</header>
+		{{ .Content }}
+	</article>
+{{ end }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+	<section class="container-fluid">
+		{{- range where .Pages "Section" "posts" }}
+		<div class="row">
+			<time class="d-none d-sm-block col-sm-2" datetime="{{ .Date.Format "2006-01-02" }}">
+				<pre class="mb-0">{{ .Date.Format "2006-01-02" }}</pre>
+			</time>
+			<div class="col-sm">
+				<a class="post-link" href="{{ .URL }}">{{ .Title }}</a>
+			</div>
+		</div>
+		{{- end }}
+	</section>
+{{ end }}
