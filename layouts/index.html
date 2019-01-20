@@ -1,5 +1,5 @@
 {{ define "main" }}
 	<section class="container-fluid">
-{{ partial "listing.html" .Pages }}
+{{ partial "listing.html" ( where .Pages "Section" "posts" ) | chomp }}
 	</section>
 {{ end }}
