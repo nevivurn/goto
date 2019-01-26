@@ -1,19 +1,20 @@
-FROM alpine:3.8 AS build
+FROM nevivurn/base:latest
 
 ARG HUGO_VERSION=0.53
 
 WORKDIR /tmp/build
 RUN set -ex \
+	&& apk add --no-cache nginx \
 	&& wget "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz" -O hugo.tar.gz \
-	&& tar xzf hugo.tar.gz hugo \
-	&& mv hugo /hugo
+	&& tar -C /usr/local/bin -xzf hugo.tar.gz hugo \
+	&& cd .. && rm -rf /tmp/build
 
-ARG HUGO_BASEURI=https://www.nevivur.net/
+ENV HUGO_BASEURI=https://www.nevivur.net/
 
 COPY . /site
-WORKDIR /site
-RUN /hugo -b $HUGO_BASEURI
 
-FROM nginx:1.15
-COPY --from=build /site/public /site
 COPY docker/nginx.conf /etc/nginx/nginx.conf
+COPY docker/service/ /docker/service/
+
+WORKDIR /docker
+EXPOSE 80
