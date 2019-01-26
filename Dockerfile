@@ -9,7 +9,7 @@ RUN set -ex \
 	&& tar -C /usr/local/bin -xzf hugo.tar.gz hugo \
 	&& cd .. && rm -rf /tmp/build
 
-ENV HUGO_BASEURI=https://www.nevivur.net/
+ENV HUGO_BASEURL=https://www.nevivur.net/
 
 COPY . /site
 
