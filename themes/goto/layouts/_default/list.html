@@ -1,0 +1,10 @@
+{{ define "main" -}}
+<h2>
+	{{- if eq .Kind "taxonomy"}}<a href="{{ "/tags/" | absURL }}">Tag</a>: {{ .Title }}
+	{{- else if eq .Kind "home"}}Posts
+	{{- else }}{{ .Title }}{{ end -}}
+</h2>
+{{- $pages := .Pages }}
+{{- if eq .Kind "home" }}{{ $pages = ( where .Pages "Section" "posts" ) }}{{ end }}
+{{ partial "listing.html" $pages -}}
+{{ end }}

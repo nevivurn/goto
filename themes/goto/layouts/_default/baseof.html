@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<head>
 {{ partial "head.html" . | chomp }}
-</head>
 
-<body>
+<body class="wrapper">
+
 {{ partial "header.html" . | chomp }}
-{{ block "main" . }}{{ end }}
+
+<section class="container">{{ block "main" . }}{{ end }}</section>
+
 {{ partial "footer.html" . | chomp }}
+
 </body>

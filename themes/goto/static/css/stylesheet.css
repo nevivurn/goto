@@ -1,0 +1,82 @@
+/* Global styling */
+html {
+	color: #111111;
+}
+a {
+	color: #0074d9;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Centering */
+.wrapper {
+	width: 100%;
+	margin: 0;
+}
+.container {
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 0.5em;
+}
+
+/* Override menu links */
+.pure-menu-link {
+	color: inherit;
+}
+.pure-menu-active > .pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover {
+	color: #aaaaaa;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+/* Custom styling elements */
+.site-title {
+	text-transform: none;
+	display: inline-block;
+}
+.site-navigation {
+	border-bottom: 1px solid #dddddd;
+}
+.site-footer {
+	border-top: 1px solid #dddddd;
+}
+.site-listing {
+	font-size: 120%;
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
+.site-listing li {
+	margin: 0.5em 0;
+}
+.site-listing li > a {
+	color: inherit;
+}
+.site-footnote {
+	font-size: 80%;
+	color: #777777;
+	margin: 0;
+}
+/* Posts */
+.post-title {
+	margin-bottom: 0;
+}
+.post code {
+	color:  #f012be;
+}
+.post pre code {
+	color: inherit;
+}
+
+/* Text alignment */
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}

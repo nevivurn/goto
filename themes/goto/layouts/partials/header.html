@@ -1,0 +1,22 @@
+<nav class="container site-navigation pure-g">
+	<div class="pure-u-1-5">
+		<div class="pure-menu">
+			<a class="site-title pure-menu-link" href="{{ .Site.BaseURL }}">
+				{{- .Site.Params.styledTitle | default .Site.Title | markdownify -}}
+			</a>
+		</div>
+	</div>
+	<div class="pure-u-4-5">
+		<div class="pure-menu pure-menu-horizontal text-right">
+			<ul class="pure-menu-list">
+				{{- $current := . }}
+				{{- range .Site.Menus.main }}
+				<li class="pure-menu-item{{ if $current.IsMenuCurrent "main" . }} pure-menu-active{{ end }}">
+					<a class="pure-menu-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+				</li>
+				{{- end }}
+			</ul>
+		</div>
+	</div>
+</nav>
+

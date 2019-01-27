@@ -1,0 +1,9 @@
+<ul class="site-listing">
+	{{- range . }}
+	<li>
+		<a href="{{ .URL }} ">{{ .Title }}</a>
+		{{- if ne .Kind "taxonomy" }}{{- partial "post-meta.html" . }}{{ end -}}
+		
+	</li>
+	{{- end }}
+</ul>

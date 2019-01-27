@@ -1,0 +1,5 @@
+{{ define "main" }}
+<div class="text-center">
+{{ .Site.Params.notFound | default "Page not found" | markdownify | chomp }}
+</div>
+{{ end }}
