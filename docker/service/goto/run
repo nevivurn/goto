@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+cd /site && hugo -b "$HUGO_BASEURL" && cd /docker
+exec nginx -g 'daemon off;'
