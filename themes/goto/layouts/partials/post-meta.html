@@ -1,4 +1,4 @@
 <p class="site-footnote">
 	{{ if ne ( .Date.Format "2006-01-02" ) "0001-01-01" }}<time>{{ .Date.Format "2006-01-02" }}</time>{{ end }}
-	{{- with .Params.Tags }} | tags:{{ range . }} <a href="{{ printf "/tags/%s" . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
+	{{- with .Params.Tags }} | tags:{{ range . }} <a href="{{ printf "/tags/%s/" . | urlize }}">{{ . }}</a>{{ end }}{{ end }}
 </p>
