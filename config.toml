@@ -8,7 +8,7 @@ pygmentsCodefences = true
 pygmentsStyle = "bw"
 pygmentsUseClasses = true
 
-disableKinds = ["sitemap", "RSS"]
+disableKinds = ["sitemap", "RSS", "section"]
 
 [author]
 name = "Yongun Seong"

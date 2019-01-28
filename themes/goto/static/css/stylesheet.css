@@ -2,12 +2,8 @@
 html {
 	color: #111111;
 }
-a {
-	color: #0074d9;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: underline;
+html, .pure-g [class *= "pure-u"] {
+	font-family: 'Ubuntu', sans-serif;
 }
 
 /* Centering */
@@ -33,7 +29,6 @@ a:hover {
 
 /* Custom styling elements */
 .site-title {
-	text-transform: none;
 	display: inline-block;
 }
 .site-navigation {
@@ -63,11 +58,20 @@ a:hover {
 .post-title {
 	margin-bottom: 0;
 }
+.post a {
+	color: #0074d9;
+	text-decoration: none;
+}
+.post a:hover {
+	text-decoration: underline;
+}
 .post code {
 	color:  #f012be;
+	font-family: 'Ubuntu Mono', monospace;
 }
 .post pre code {
 	color: inherit;
+	font-family: 'Ubuntu Mono', monospace;
 }
 
 /* Text alignment */
