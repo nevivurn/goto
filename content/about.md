@@ -5,9 +5,9 @@ weight = 100
 +++
 
 I am Yongun Seong (nevivurn).
-You can find me on GitHub as [nevivurn](https://github.com/nevivurn)
 
 ### Contact
+- [GitHub](https://github.com/nevivurn)
 - [Email](mailto:nevivurn@riseup.net)
 - [Keybase](https://keybase.io/nevivurn)
 - I am "nevivurn" on the following IRC networks:
