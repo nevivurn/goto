@@ -10,6 +10,9 @@ pygmentsUseClasses = true
 
 disableKinds = ["sitemap", "RSS"]
 
+[blackfriday]
+extensions = ["tabSizeEight"]
+
 [author]
 name = "Yongun Seong"
 email = "nevivurn@riseup.net"

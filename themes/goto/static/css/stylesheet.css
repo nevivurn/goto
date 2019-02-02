@@ -91,6 +91,11 @@ html, .pure-g [class *= "pure-u"] {
 	padding: 0.5em;;
 	overflow: auto;
 }
+.post blockquote {
+	margin: inherit;
+	border-left: 5px solid #dddddd;
+	padding-left: 1em;
+}
 
 /* Text alignment */
 .text-left {
