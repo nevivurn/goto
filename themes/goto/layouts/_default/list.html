@@ -1,6 +1,6 @@
 {{ define "main" -}}
 <h2>
-	{{- if eq .Kind "taxonomy"}}<a href="{{ "/tags/" | absURL }}">Tag</a>: {{ .Title }}
+	{{- if eq .Kind "taxonomy"}}<a href="{{ "/tags/" | relURL }}">Tag</a>: {{ .Title }}
 	{{- else if eq .Kind "home"}}Posts
 	{{- else }}{{ .Title }}{{ end -}}
 </h2>

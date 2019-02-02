@@ -11,6 +11,7 @@ pygmentsUseClasses = true
 disableKinds = ["sitemap", "RSS"]
 
 [blackfriday]
+hrefTargetBlank = true
 extensions = ["tabSizeEight"]
 
 [author]
@@ -28,11 +29,6 @@ tag = "tags"
 home = ["HTML"]
 section = ["HTML", "RSS"]
 page = ["HTML"]
-
-[[menu.main]]
-name = "Github"
-url = "https://github.com/nevivurn"
-weight=1000
 
 [params]
 styledTitle = "`goto now;`"

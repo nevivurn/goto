@@ -1,7 +1,7 @@
 <nav class="container site-navigation pure-g">
 	<div class="pure-u-2-5">
 		<div class="pure-menu">
-			<a class="site-title pure-menu-link" href="{{ .Site.BaseURL }}">
+			<a class="site-title pure-menu-link" href="{{ "/" | relURL }}">
 				{{- .Site.Params.styledTitle | default .Site.Title | markdownify -}}
 			</a>
 		</div>
@@ -12,7 +12,7 @@
 				{{- $current := . }}
 				{{- range .Site.Menus.main }}
 				<li class="pure-menu-item{{ if $current.IsMenuCurrent "main" . }} pure-menu-active{{ end }}">
-					<a class="pure-menu-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+					<a class="pure-menu-link" href="{{ .URL }}">{{ .Name }}</a>
 				</li>
 				{{- end }}
 			</ul>
