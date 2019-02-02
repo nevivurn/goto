@@ -5,6 +5,6 @@
 	{{- else }}{{ .Title }}{{ end -}}
 </h2>
 {{- $pages := .Pages }}
-{{- if eq .Kind "home" }}{{ $pages = ( where .Pages "Section" "posts" ) }}{{ end }}
+{{- if eq .Kind "home" }}{{ $pages = ( where .Pages "Section" "!=" "" ) }}{{ end }}
 {{ partial "listing.html" $pages -}}
 {{ end }}

@@ -8,14 +8,15 @@ pygmentsCodefences = true
 pygmentsStyle = "bw"
 pygmentsUseClasses = true
 
-disableKinds = ["sitemap", "RSS", "section"]
+disableKinds = ["sitemap", "RSS"]
 
 [author]
 name = "Yongun Seong"
 email = "nevivurn@riseup.net"
 
 [permalinks]
-posts = "/:year/:month/:title/"
+posts = "/posts/:year/:month/:title/"
+writeups = "/writeups/:year/:month/:title/"
 
 [taxonomies]
 tag = "tags"
@@ -28,7 +29,7 @@ page = ["HTML"]
 [[menu.main]]
 name = "Github"
 url = "https://github.com/nevivurn"
-weight=1002
+weight=1000
 
 [params]
 styledTitle = "`goto now;`"

@@ -2,8 +2,7 @@
 	{{- range . }}
 	<li>
 		<a href="{{ .URL }} ">{{ .Title }}</a>
-		{{- if ne .Kind "taxonomy" }}{{- partial "post-meta.html" . }}{{ end -}}
-		
+		{{ if ne .Kind "taxonomy" }}{{ partial "post-meta.html" . | chomp}}{{ end }}
 	</li>
 	{{- end }}
 </ul>

@@ -39,9 +39,9 @@ html, .pure-g [class *= "pure-u"] {
 }
 .site-listing {
 	font-size: 120%;
-	list-style: none;
-	padding-left: 0;
 	margin: 0;
+	padding-left: 0;
+	list-style: none;
 }
 .site-listing li {
 	margin: 0.5em 0;
@@ -58,6 +58,15 @@ html, .pure-g [class *= "pure-u"] {
 .post-title {
 	margin-bottom: 0;
 }
+.post {
+	line-height: 1.5;
+}
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6 {
+	line-height: 1.2;
+}
+.post hr {
+	border-top: 0;
+}
 .post a {
 	color: #0074d9;
 	text-decoration: none;
@@ -65,13 +74,22 @@ html, .pure-g [class *= "pure-u"] {
 .post a:hover {
 	text-decoration: underline;
 }
+.post img {
+	max-width:100%;
+	height:auto;
+	display:block;
+}
 .post code {
-	color:  #f012be;
 	font-family: 'Ubuntu Mono', monospace;
+	color:  #f012be;
+	padding: 0.2em;;
 }
 .post pre code {
-	color: inherit;
-	font-family: 'Ubuntu Mono', monospace;
+	color:  inherit;
+	background-color: #f0f0f0;
+	display: block;
+	padding: 0.5em;;
+	overflow: auto;
 }
 
 /* Text alignment */
