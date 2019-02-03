@@ -3,7 +3,7 @@ ln -sf /dev/stdout /var/log/nginx/access.log
 ln -sf /dev/stderr /var/log/nginx/error.log
 
 cd /site
-rm -r content/writeups/2018-*
+find content -type f -name 'README.md' -delete
 hugo --gc --minify -b "$HUGO_BASEURL"
 cd /docker
 
