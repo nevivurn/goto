@@ -11,7 +11,7 @@ I am Yongun Seong (nevivurn).
 - [Email](mailto:nevivurn@riseup.net)
 - [Keybase](https://keybase.io/nevivurn)
 - I am "nevivurn" on the following IRC networks:
-	- Freenode
-	- OFTC
-	- UriIRC
+  - Freenode
+  - OFTC
+  - UriIRC
 - GPG: `FF41 471E CA18 35A3 0A0A  9689 8E6F E169 6722 CF28`
