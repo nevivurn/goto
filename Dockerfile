@@ -14,6 +14,7 @@ ENV HUGO_BASEURL=https://www.nevivur.net/
 COPY . /site
 
 COPY docker/nginx.conf /etc/nginx/nginx.conf
+COPY docker/mime.types /etc/nginx/mime.types
 COPY docker/service/ /docker/service/
 
 WORKDIR /docker
