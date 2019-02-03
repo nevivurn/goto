@@ -1,0 +1,3 @@
+[submodule "content/writeups"]
+	path = content/writeups
+	url = https://github.com/nevivurn/writeups.git
