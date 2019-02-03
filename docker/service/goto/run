@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 ln -sf /dev/stdout /var/log/nginx/access.log
 ln -sf /dev/stderr /var/log/nginx/error.log
-cd /site && hugo --gc --minify -b "$HUGO_BASEURL" && cd /docker
+
+cd /site
+rm -r content/writeups/2018-*
+hugo --gc --minify -b "$HUGO_BASEURL"
+cd /docker
+
 exec nginx -g 'daemon off;'
