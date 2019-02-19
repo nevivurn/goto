@@ -6,16 +6,21 @@ cwd=$(pwd)
 cd content/writeups/
 git checkout master
 git pull
+find -type f -name README.md -delete
 cd "$cwd"
 
-# Cleanup
-find content/writeups/ -type f -name README.md -delete
-find public/ -not -name 'CNAME' -delete
+# Reset public dir
+cd public/
+git checkout master
+find public/ -not \( -name 'CNAME' -o -name '.git' \) -delete
+cd "$cwd"
 
 # Re-generated
 hugo generate --gc --minify
 
 # Publish
-git add public/
+cd public/
+git add .
 git commit -m "Update as of $(date '+%Y-%m-%d %H:%M:%S')"
 git push
+cd "$cwd"
