@@ -1,3 +1,6 @@
 [submodule "content/writeups"]
 	path = content/writeups
 	url = https://github.com/nevivurn/writeups.git
+[submodule "public"]
+	path = public
+	url = git@github.com:nevivurn/nevivurn.github.io.git
