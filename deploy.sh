@@ -18,6 +18,12 @@ cd "$cwd"
 # Re-generated
 hugo --gc --minify
 
+# Reset writeups
+cd content/writeups/
+git checkout master
+git reset --hard
+cd "$cwd"
+
 # Publish
 cd public/
 git add .
