@@ -16,7 +16,7 @@ find public/ -not \( -name 'CNAME' -o -name '.git' \) -delete
 cd "$cwd"
 
 # Re-generated
-hugo generate --gc --minify
+hugo --gc --minify
 
 # Publish
 cd public/
