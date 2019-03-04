@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -ex
+
 cwd=$(pwd)
 
 # Update writeups
@@ -12,7 +14,7 @@ cd "$cwd"
 # Reset public dir
 cd public/
 git checkout master
-find public/ -not \( -name 'CNAME' -o -name '.git' \) -delete
+find -not \( -name 'CNAME' -o -name '.git' \) -delete
 cd "$cwd"
 
 # Re-generated
