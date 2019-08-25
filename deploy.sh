@@ -2,22 +2,23 @@
 
 set -ex
 
-cwd=$(pwd)
+cwd="$(pwd)"
 
 # Update writeups
 cd content/writeups/
 git checkout master
 git pull
 find -type f -name README.md -delete
+find -mindepth 1 -maxdepth 1 -type d -not -execdir test -e '{}/index.md' \; -print0 | xargs -0 rm -r
 cd "$cwd"
 
-# Reset public dir
+# Reset site
 cd public/
 git checkout master
 find -not \( -name 'CNAME' -o -name '.git' \) -delete
 cd "$cwd"
 
-# Re-generated
+# Generate site
 hugo --gc --minify
 
 # Reset writeups
